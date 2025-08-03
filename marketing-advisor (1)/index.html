@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI মার্কেটিং প্ল্যাটফর্ম | আপনার ব্যবসার ডিজিটাল বন্ধু</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Babel for in-browser JSX/TSX transpilation -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- PuterVision Library -->
+    <script src="./putervision.js"></script>
+    <style>
+      :root {
+        --primary-color: #4f46e5;
+        --primary-hover: #4338ca;
+        --secondary-color: #10b981;
+        --text-main: #111827;
+        --text-light: #4B5563;
+        --bg-main: #F9FAFB;
+        --border-color: #E5E7EB;
+      }
+      body {
+        font-family: 'Noto Sans Bengali', sans-serif;
+        background-color: var(--bg-main);
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+      }
+      .btn-primary {
+        background-image: linear-gradient(to right, #4f46e5, #6d28d9);
+        color: white;
+        font-weight: 600;
+        padding: 10px 24px;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px -3px rgba(79, 70, 229, 0.4);
+      }
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 7px 20px -3px rgba(79, 70, 229, 0.5);
+      }
+      .card-style {
+        background-color: white;
+        border-radius: 12px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.03), 0 1px 2px -1px rgba(0,0,0,0.03);
+        transition: all 0.3s ease;
+      }
+      .card-style:hover {
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.07), 0 4px 6px -4px rgba(0,0,0,0.07);
+        border-color: #D1D5DB;
+      }
+      .elegant-title {
+        font-size: 2.25rem; /* 36px */
+        font-weight: 800;
+        letter-spacing: -0.025em;
+        color: var(--text-main);
+      }
+      .elegant-subtitle {
+          color: var(--text-light);
+          font-size: 1.125rem; /* 18px */
+          max-width: 42rem;
+          margin-left: auto;
+          margin-right: auto;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "@google/genai": "https://esm.sh/@google/genai",
+    "@vercel/node": "https://esm.sh/@vercel/node@^5.3.10",
+    "react-dom": "https://esm.sh/react-dom@^19.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white">
+    <div id="root"></div>
+    <div id="puter-permission-modal-container"></div>
+    <script type="text/babel" data-presets="react,typescript" src="./index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

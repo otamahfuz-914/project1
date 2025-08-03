@@ -1,0 +1,8 @@
+{
+  "name": "Marketing Advisor",
+  "description": "একটি AI-চালিত মার্কেটিং সহকারী যা ফেসবুক ক্যাম্পেইনের জন্য বিজ্ঞাপন কপি, হুক এবং টার্গেট অডিয়েন্সের সাজেশন তৈরি করে।",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}
